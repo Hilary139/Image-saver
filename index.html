@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>DealStore | upload</title>
 </head>
+
 <body>
-    <form name="dogPictures" method="POST" data-netlify="true">
-        <p>
-          <label>Dog’s Name: <input type="text" name="name" /></label>   
-        </p>
-        <p>
-            <label>Description: <textarea name="description"></textarea></label>
-          </p>
-        <p>
-          <label>Dog’s Picture: <input type="file" name="picture" /></label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
+  <h1>Product Upload</h1>
+  <form name="dogPictures" method="POST" data-netlify="true">
+    <p>
+      <label>Business Name: </label>  <input type="text" name="businessName" placeholder=" Business Name"required/></label>
+    </p>
+    <p>
+      <label>Businss Number: </label>  <input type="text" name="businssNumber" placeholder=" Businss Number" required/></label>
+    </p>
+    <p>
+      <label>Product Name: </label>  <input type="text" name="productName" placeholder=" Product Name"required/></label>
+    </p>
+    <p>
+      <label>Product Price: </label>  <input type="text" name="productPrice" placeholder=" Product Price"required/></label>
+    </p>
+    <p>
+      <label>Product Stock: </label>  <input type="number" name="productStock" placeholder=" Product Stock"required/></label>
+    </p>
+    <p>
+      <label>Description:  <textarea name="description" placeholder=" Description"required></textarea></label>
+    </p>
+    <p>
+      <label>Pickup Location: <textarea name="pickupLocation" placeholder="Pickup Location" required></textarea></label>
+    </p>
+    <p>
+      <label>Product Picture: <input type="file" name="picture" required/></label>
+    </p>
+    <p>
+      <button type="submit">Send</button>
+    </p>
+  </form>
 </body>
+
 </html>
